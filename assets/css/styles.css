@@ -1,0 +1,178 @@
+/* Íconos sociales */
+* {
+  font-family: "National Park", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.titulo {
+  font-family: "Bruno Ace", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.social-icons a {
+  color: #333;
+  margin-left: 15px;
+  transition: color 0.3s;
+  font-size: 2rem;
+}
+
+.social-icons a.facebook:hover {
+  color: #3b5998;
+}
+
+.social-icons a.twitter:hover {
+  color: #1da1f2;
+}
+
+.social-icons a.instagram:hover {
+  color: #e1306c;
+}
+
+.social-icons a.linkedin:hover {
+  color: #0e76a8;
+}
+
+/* Menú: hover gris */
+.navbar-nav .nav-link {
+  color: #000;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #c6da52;
+}
+
+#slider img {
+  height: 450px;
+  object-fit: cover;
+}
+
+.carousel-item {
+  transition: transform 1.5s ease-in-out;
+  /* Ajustá la duración aquí */
+}
+
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  gap: 60px;
+  align-items: center;
+}
+
+.marquee img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.banner-margen {
+  margin: 5rem 1rem;
+}
+
+.oferta-card {
+  border: none;
+  /* sin borde */
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.oferta-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  /*background-color: lightgray; //#f8f9fa;  gris claro (Bootstrap light) */
+}
+
+.oferta-card img {
+  height: 250px;
+  object-fit: contain;
+  /*object-fit: cover;*/
+}
+
+.oferta-card {
+  width: calc((100% / 3) - 1rem);
+  /* 3 cards por fila con 1rem de espacio aproximado */
+}
+
+@media (max-width: 768px) {
+  .oferta-card {
+    width: 100% !important;
+  }
+}
+
+.footer-personalizado {
+  background-color: #c6da52;
+  font-size: 1.4rem;
+}
+
+.icono-red {
+  transition: color 0.3s ease;
+}
+
+.icono-red:hover {
+  color: #666666 !important;
+}
+
+.hero-servicio-tecnico {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../img/Reparaciones-De-Computadoras.jpeg') center/cover no-repeat;
+  min-height: 60vh;
+  margin: 3rem 0;
+}
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c4a;
+  color: #fff;
+}
+
+/* Animación tipo "bounce" suave */
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
