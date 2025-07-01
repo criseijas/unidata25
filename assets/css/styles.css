@@ -7,17 +7,23 @@
 }
 
 /*header {
-  background-color: #c6da52;
+  background-color: white;
 }*/
 
 .titulo {
   font-family: "Bruno Ace", sans-serif;
   font-weight: 600;
   font-style: normal;
+  color: #000;
+}
+
+.sub {
+  text-align: center;
+  font-size: 1rem;
 }
 
 .social-icons a {
-  color: #333;
+  color: #000;
   margin-left: 15px;
   transition: color 0.3s;
   font-size: 2rem;
