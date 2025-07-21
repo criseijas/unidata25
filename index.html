@@ -5,14 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>UniData - Tecnología y Servicio Técnico</title>
-  <meta name="description" content="Venta de productos tecnológicos y servicio técnico especializado en notebooks, PC y accesorios. Atención personalizada en Argentina.">
-  <meta name="keywords" content="tecnología, servicio técnico, notebooks, computadoras, UniData, accesorios, reparación, electrónica">
+  <meta name="description"
+    content="Venta de productos tecnológicos y servicio técnico especializado en notebooks, PC y accesorios. Atención personalizada en Argentina.">
+  <meta name="keywords"
+    content="tecnología, servicio técnico, notebooks, computadoras, UniData, accesorios, reparación, electrónica">
   <meta name="author" content="UniData">
   <meta name="robots" content="index, follow">
   <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
   <meta property="og:title" content="UniData - Tecnología y Servicio Técnico">
-  <meta property="og:description" content="Confiá en UniData para tus productos tecnológicos y soporte técnico especializado.">
-  <meta property="og:image" content="https://unidata.vercel.app/assets/img/logo.png"> <!-- Asegurate que la imagen exista -->
+  <meta property="og:description"
+    content="Confiá en UniData para tus productos tecnológicos y soporte técnico especializado.">
+  <meta property="og:image" content="https://unidata.vercel.app/assets/img/logo.png">
+  <!-- Asegurate que la imagen exista -->
   <meta property="og:url" content="https://unidata.vercel.app">
   <meta property="og:type" content="website">
 
@@ -37,13 +41,25 @@
 
 <body>
 
+  <!-- Barra superior informativa (visible siempre) -->
+  <section style="background-color: #b2da39; padding: 0.5rem;">
+    <a href="https://wa.me/5491156363993" target="_blank" style="text-decoration: none; color: black;">
+      <div class="text-center fw-bold">
+        Servicio técnico especializado en notebook
+        <i class="fab fa-apple mx-1 fa-2x"></i>
+        <i class="fab fa-windows mx-1 fa-2x"></i>,
+        tablets, CPU, impresoras.
+      </div>
+    </a>
+  </section>
+
   <header id="inicio" class="border-bottom">
     <nav class="navbar navbar-expand-md container py-3">
       <!-- Logo + Título -->
       <div class="d-flex align-items-center">
         <img src="./assets/img/logoUnidata.png" alt="Logo" width="100" height="100" class="me-2" />
         <span class="navbar-brand mb-0 h5 fs-1 titulo">UniData<p class="sub">Computación Haedo</p></span>
-        
+
       </div>
 
       <!-- Botón hamburguesa -->
@@ -59,7 +75,7 @@
             <a class="nav-link" href="#inicio">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#inicio">Blog</a>
+            <a class="nav-link" href="./blog.html">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#servicio">Servicio Técnico</a>
@@ -119,9 +135,9 @@
   </section>
 
   <!-- Sección Banner -->
-  <section id="banner" class="banner-margen">
+  <!--<section id="banner" class="banner-margen">
     <img src="./assets/img/bannerHp.png" alt="Banner promocional" class="w-100 d-block">
-  </section>
+  </section>-->
 
   <section id="ofertas" class="bg-light section-ofertas px-5">
     <div class="container-fluid px-4"> <!-- px-4 = 1.5rem por lado (~2rem visualmente) -->
@@ -132,10 +148,12 @@
 
         <!-- Card 1 -->
         <div class="card oferta-card text-center" style="width: 22rem;">
-          <img src="./assets/img/mic snowball.png" class="card-img-top img-tamanio" alt="Producto 1">
+          <img src="./assets/img/teclado_nkb67.webp" class="card-img-top img-tamanio" alt="Producto 1">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Micrófono Logitech Snowball Ice Blanco</h5>
-            <p class="card-text fw-bold text-success">$99.199</p>
+            <h5 class="card-title">Teclado mecánico RGB NKB-67 Noga</h5>
+            <p class="card-text fw-bold text-success textp"><span class="spanprecio">3 cuotas sin interés de</span> $17.540</p>
+            <p class="card-text fw-bold text-success">$52.600</p>
+            <p class="card-text fw-bold text-success">$46.880 <span class="textp">con Transferencia o Debito</span></p>
             <button class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#modalProducto1">
               Ver más
             </button>
@@ -144,10 +162,12 @@
 
         <!-- Card 2 -->
         <div class="card oferta-card text-center" style="width: 22rem;">
-          <img src="./assets/img/ng-btwins42.png" class="card-img-top" alt="Producto 2">
+          <img src="./assets/img/auriculares_x-2670.jpg" class="card-img-top" alt="Producto 2">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Auricular BT ng-btwins 42</h5>
-            <p class="card-text fw-bold text-success">$28.650</p>
+            <h5 class="card-title">Auriculares Fit Color x-2670</h5>
+            <p class="card-text fw-bold text-success textp"><span class="spanprecio">3 cuotas sin interés de</span> $6.400</p>
+            <p class="card-text fw-bold text-success">$19.200</p>
+            <p class="card-text fw-bold text-success">$17.120 <span class="textp">con Transferencia o Debito</span></p>
             <button class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#modalProducto2">
               Ver más
             </button>
@@ -156,10 +176,12 @@
 
         <!-- Card 3 -->
         <div class="card oferta-card text-center" style="width: 22rem;">
-          <img src="./assets/img/mouseLogitechBT.jpg" class="card-img-top" alt="Producto 3">
+          <img src="./assets/img/watch_ng-sw24.webp" class="card-img-top" alt="Producto 3">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Mouse BT Logitech Pop</h5>
-            <p class="card-text fw-bold text-success">$45.799</p>
+            <h5 class="card-title">Noga Watch ng-sw24</h5>
+            <p class="card-text fw-bold text-success textp"><span class="spanprecio">3 cuotas sin interés de</span> $8.440</p>
+            <p class="card-text fw-bold text-success">$25.320</p>
+            <p class="card-text fw-bold text-success">$22.600 <span class="textp">con Transferencia o Debito</span></p>
             <button class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#modalProducto3">
               Ver más
             </button>
@@ -168,10 +190,12 @@
 
         <!-- Card 4 -->
         <div class="card oferta-card text-center" style="width: 22rem;">
-          <img src="./assets/img/PendriveSandiskCruzerBlade32GBBlue.jpg" class="card-img-top" alt="Producto 4">
+          <img src="./assets/img/ng-btwins-02.webp" class="card-img-top" alt="Producto 4">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Pendrive SanDisk 32GB</h5>
-            <p class="card-text fw-bold text-success">$8.950</p>
+            <h5 class="card-title">Auricular bt ngx-btwins2 Noga</h5>
+            <p class="card-text fw-bold text-success textp"><span class="spanprecio">3 cuotas sin interés de</span> $7.840</p>
+            <p class="card-text fw-bold text-success">$23.500</p>
+            <p class="card-text fw-bold text-success">$20.920 <span class="textp">con Transferencia o Debito</span></p>
             <button class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#modalProducto4">
               Ver más
             </button>
@@ -180,10 +204,12 @@
 
         <!-- Card 5 -->
         <div class="card oferta-card text-center" style="width: 22rem;">
-          <img src="./assets/img/padMouseGamer.jpg" class="card-img-top" alt="Producto 5">
+          <img src="./assets/img/st-705.webp" class="card-img-top" alt="Producto 5">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Pad mouse Gamer Noga ST-G13</h5>
-            <p class="card-text fw-bold text-success">$13.720</p>
+            <h5 class="card-title">Auricular Gamer st-705 Noga</h5>
+            <p class="card-text fw-bold text-success textp"><span class="spanprecio">3 cuotas sin interés de</span> $11.020</p>
+            <p class="card-text fw-bold text-success">$33.060</p>
+            <p class="card-text fw-bold text-success">$29.500 <span class="textp">con Transferencia o Debito</span></p>
             <button class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#modalProducto5">
               Ver más
             </button>
@@ -192,10 +218,12 @@
 
         <!-- Card 6 -->
         <div class="card oferta-card text-center" style="width: 22rem;">
-          <img src="./assets/img/webcam-logitech-c270.jpg" class="card-img-top" alt="Producto 6">
+          <img src="./assets/img/parlante_ng-pk08.webp" class="card-img-top" alt="Producto 6">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">WebCam Logitech C270</h5>
-            <p class="card-text fw-bold text-success">$53.150</p>
+            <h5 class="card-title">Parlante bt ng-pk08 Noga</h5>
+            <p class="card-text fw-bold text-success textp"><span class="spanprecio">3 cuotas sin interés de</span> $5.330</p>
+            <p class="card-text fw-bold text-success">$15.990</p>
+            <p class="card-text fw-bold text-success">$14.260 <span class="textp">con Transferencia o Debito</span></p>
             <button class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#modalProducto6">
               Ver más
             </button>
@@ -211,15 +239,25 @@
         <div class="modal-dialog modal-dialog-centered modal-md">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="modalProducto1Label">Micrófono Logitech Snowball Ice Blanco</h5>
+              <h5 class="modal-title" id="modalProducto1Label">Teclado mecánico RGB Noga NKB-67</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
-              <img src="./assets/img/mic snowball.png" class="img-fluid mb-3" alt="Notebook HP">
-              <p><strong>Precio:</strong>$99.199</p>
-              <p>Snowball iCE es lo más fácil y rápido para conseguir sonido de alta calidad para grabaciones y
-                streaming. Con una tecnología de cápsula de condensador cardioide especial, Snowball iCE ofrece una
-                calidad de audio nítida infinitamente mejor que la del micrófono integrado en la computadora.</p>
+              <img src="./assets/img/teclado_nkb67_modal.webp" class="img-fluid mb-3" alt="Notebook HP">
+              <p class="card-text fw-bold text-success textp"><span class="spanprecio">3 cuotas sin interés de</span> $17.540</p>
+              <p><strong></strong>$52.600</p>
+              <p class="card-text fw-bold text-success">$46.880 <span class="textp">con Transferencia o Debito</span></p>
+              <p>Teclado mecánico que combina durabilidad y precisión en un diseño elegante. Ideal para gamers y profesionales, este teclado ofrece características que mejoran tu rendimiento diario.     
+                
+                - 84 teclas mecánicas con switch Brown: Proporcionan una respuesta rápida y silenciosa, aumentando tu productividad.
+                - 12 teclas multimedia: Acceso instantáneo a funciones que hacen tu trabajo más eficiente.
+                - 26 teclas antighosting: Permiten múltiples pulsaciones simultáneas, perfectas para juegos intensos sin errores.
+                - 11 modos de retroiluminación LED RGB: Personalizá tu teclado con colores vibrantes que se adaptan a tu estilo.
+                Conexión USB/USB Type-C desmontable: Flexibilidad para conectar en diversos dispositivos sin complicaciones.
+                Compatibilidad: Funciona en Windows 7/8/10 y Mac OSX, asegurando versatilidad en su uso.
+                Con dimensiones compactas (31,1 x 12,2 x 3,5 cm) y un peso ligero (515 gr), el NKB-9107 es perfecto para cualquier espacio.
+                ¡Elevá tu forma de trabajar y jugar con este teclado mecánico de alta gama!
+              </p>
             </div>
             <div class="modal-footer">
               <a href="https://wa.me/5491156363993?text=Hola,%20quiero%20más%20información%20sobre%20el%20producto"
@@ -238,15 +276,15 @@
         <div class="modal-dialog modal-dialog-centered modal-md">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="modalProducto2Label">Auricular BT ng-btwins 42</h5>
+              <h5 class="modal-title" id="modalProducto2Label">Auriculares Fit Color x-2670</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
-              <img src="./assets/img/ng-btwins42.png" class="img-fluid mb-3" alt="Notebook HP">
-              <p><strong>Precio:</strong> $28.650</p>
-              <p>Auricular BT. Versión Inalámbrica BT: V5.3+BR+EDR+BLE. Frecuencia BT: 2.4 Ghz. Batería auricular: 40
-                mAh. Batería estuche: 200 mAh. Puerto de carga: USB-C. Alcance: 15 metros. Tiempo de carga: 1 hora
-                approx. Tiempo de uso: 5 horas approx.</p>
+              <img src="./assets/img/auriculares_x-2670_modal.webp" class="img-fluid mb-3" alt="Notebook HP">
+              <p class="card-text fw-bold text-success textp"><span class="spanprecio">3 cuotas sin interés de</span> $6.400</p>
+              <p><strong>Precio:</strong> $19.200</p>
+              <p class="card-text fw-bold text-success">$17.120 <span class="textp">con Transferencia o Debito</span></p>
+              <p>Los Auriculares Fit Color ofrecen un diseño moderno y ligero junto con un sonido de alta calidad y bajos reforzados, ideales para quienes buscan una experiencia auditiva única con estilo y comodidad.</p>
             </div>
             <div class="modal-footer">
               <a href="https://wa.me/5491156363993?text=Hola,%20quiero%20más%20información%20sobre%20el%20producto"
@@ -265,14 +303,25 @@
         <div class="modal-dialog modal-dialog-centered modal-md">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="modalProducto3Label">Mouse BT Logitech Pop</h5>
+              <h5 class="modal-title" id="modalProducto3Label">Noga Watch ng-sw24</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
-              <img src="./assets/img/mouseLogitechBT.jpg" class="img-fluid mb-3" alt="Notebook HP">
-              <p><strong>Precio:</strong> $45.799</p>
-              <p>Logitech POP Mouse inalámbrico con Emoji personalizable. Tecnología SilentTouch, precisión y velocidad,
-                diseño compacto, Bluetooth, USB, multidispositivo, compatible con OS.</p>
+              <img src="./assets/img/watch_ng-sw24_modal.webp" class="img-fluid mb-3" alt="Notebook HP">
+              <p class="card-text fw-bold text-success textp"><span class="spanprecio">3 cuotas sin interés de</span> $8.440</p>
+              <p><strong>Precio:</strong> $25.320</p>
+              <p class="card-text fw-bold text-success">$22.600 <span class="textp">con Transferencia o Debito</span></p>
+              <p>Procesador y memoria: CPU YC1139, 128KB de RAM y 32MB de almacenamiento para un rendimiento fluido.
+                 Pantalla táctil de 1.44" TFT: Configurable con diferentes estilos de pantalla, desde reloj clásico de agujas hasta digital, para que personalices tu experiencia.
+                 Conectividad avanzada: Bluetooth 5.0 compatible con Android 5.0 e iOS 9.0 o superior, que asegura una sincronización rápida y estable.
+                 Aplicación Fitpro: Controlá todas las funciones descargando esta app desde Google Play.
+                 Funciones de salud y deporte: Modo multideporte, monitoreo de sueño y control saludable para que lleves un registro completo de tu bienestar.
+                 Resistente y duradero: Certificación waterproof IP65 contra polvo y líquidos, ideal para el uso diario.
+                 Cámara remota: Tomá fotos con solo un movimiento de muñeca, perfecto para selfies y momentos espontáneos.
+                 Batería y carga: Batería de polímero de litio de 180mAh con carga magnética rápida en aproximadamente 2 horas. Autonomía de 3 a 5 días de uso y hasta 12 días en reposo.
+                 Materiales premium: Aleación de zinc y silicona que brindan resistencia y confort.
+                 Colores disponibles: Elegí entre elegante negro o vibrante naranja.
+                 Con el NG-SW24, no solo tendrás un reloj, sino un asistente personal que te acompaña en tu rutina diaria con estilo y tecnología de punta. ¡No te pierdas la oportunidad de vivir la experiencia NOGA WATCH!</p>
             </div>
             <div class="modal-footer">
               <a href="https://wa.me/5491156363993?text=Hola,%20quiero%20más%20información%20sobre%20el%20producto"
@@ -295,11 +344,19 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
-              <img src="./assets/img/PendriveSandiskCruzerBlade32GBBlue.jpg" class="img-fluid mb-3" alt="Notebook HP">
-              <p><strong>Precio:</strong> $8.950</p>
-              <p>El pendrive Sandisk Cruzerblade de 32GB es una solución práctica y económica para almacenar y
-                transferir tus archivos esenciales. Su diseño compacto y ligero lo hace ideal para llevarlo contigo a
-                donde quiera que vayas.</p>
+              <img src="./assets/img/ng-btwins-02_modal.webp" class="img-fluid mb-3" alt="Notebook HP">
+              <p class="card-text fw-bold text-success textp"><span class="spanprecio">3 cuotas sin interés de</span> $7.840</p>
+              <p><strong></strong> $23.500</p>
+              <p class="card-text fw-bold text-success">$20.920 <span class="textp">con Transferencia o Debito</span></p>
+              <p>Versión Inalámbrica: 5.0
+                Sensibilidad del Micrófono: -42db ± 3DB
+                Frecuencia: 2.4 Ghz
+                Batería: 40mAh x 2 (Auricular)
+                300mAh (Estuche)
+                Puerto de Carga: USB-C
+                Alcance: 10M
+                Tiempo de Uso: 4 Horas
+                Tiempo de Carga: 2 horas</p>
             </div>
             <div class="modal-footer">
               <a href="https://wa.me/5491156363993?text=Hola,%20quiero%20más%20información%20sobre%20el%20producto"
@@ -318,15 +375,15 @@
         <div class="modal-dialog modal-dialog-centered modal-md">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="modalProducto5Label">Pad mouse Gamer Noga ST-G13</h5>
+              <h5 class="modal-title" id="modalProducto5Label">Auricular Gamer st-705 Noga</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
-              <img src="./assets/img/padMouseGamer.jpg" class="img-fluid mb-3" alt="Notebook HP">
-              <p><strong>Precio:</strong> $13.720</p>
-              <p>El Stormer Pad te garantiza un perfecto y suave deslizamiento debido a su base de microfibra de goma
-                antideslizante.
-                Tecnología de alta densidad perfecta para la más alta exigencia gamer. Medidas: 23 x 20 x 0,3 cm.</p>
+              <img src="./assets/img/st-705_modal.webp" class="img-fluid mb-3" alt="Notebook HP">
+              <p class="card-text fw-bold text-success textp"><span class="spanprecio">3 cuotas sin interés de</span> $11.020</p>
+              <p><strong></strong> $33.060</p>
+              <p class="card-text fw-bold text-success">$29.500 <span class="textp">con Transferencia o Debito</span></p>
+              <p>Los Auriculares Gamer ST-705 te brindan sonido de Alta Definición con Bajos y Agudos profundos Poseen Micrófono omnidireccional flexible y Control de Volumen + Mic, y podrás usarlos en Juegos, Música y Llamadas en tu Smartphone, como también en P4, Tablets y PC gracias a su conexión miniplug 3.5 mm TRRS (Audio/Mic.). También incluyen LEDS multicolores en sus laterales, vincha y mic. que se encienden por conexión USB. Además posee vincha flexible y acolchados que te aislan de ruidos externos y te garantizan un agarre seguro.</p>
             </div>
             <div class="modal-footer">
               <a href="https://wa.me/5491156363993?text=Hola,%20quiero%20más%20información%20sobre%20el%20producto"
@@ -345,14 +402,15 @@
         <div class="modal-dialog modal-dialog-centered modal-md">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="modalProducto6Label">WebCam Logitech C270</h5>
+              <h5 class="modal-title" id="modalProducto6Label">Parlante bt ng-pk08 Noga</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
-              <img src="./assets/img/webcam-logitech-c270.jpg" class="img-fluid mb-3" alt="Notebook HP">
-              <p><strong>Precio:</strong> $53.150</p>
-              <p>La cámara web HD C270 ofrece conferencias nítidas y fluidas en pantalla panorámica. La corrección de
-                iluminación automática produce colores reales y naturales.</p>
+              <img src="./assets/img/parlante_ng-pk08.webp" class="img-fluid mb-3" alt="Notebook HP">
+              <p class="card-text fw-bold text-success textp"><span class="spanprecio">3 cuotas sin interés de</span> $5.330</p>
+              <p><strong></strong> $15.990</p>
+              <p class="card-text fw-bold text-success">$14.260 <span class="textp">con Transferencia o Debito</span></p>
+              <p>Lleva tu música a donde sea con el NG-PK08 Noga Go!. Un altavoz compacto y elegante que ofrece un sonido potente y claro, además de ser ideal para quienes buscan portabilidad y comodidad en un solo dispositivo.</p>
             </div>
             <div class="modal-footer">
               <a href="https://wa.me/5491156363993?text=Hola,%20quiero%20más%20información%20sobre%20el%20producto"
@@ -369,9 +427,9 @@
   </section>
 
   <!-- Sección Banner -->
-  <section id="banner" class="banner-margen">
+  <!--<section id="banner" class="banner-margen">
     <img src="./assets/img/banner-lenovo.webp" alt="Banner promocional" class="w-100 d-block">
-  </section>
+  </section>-->
 
   <!-- Sección Hero -->
   <section id="servicio" class="hero-servicio-tecnico d-flex align-items-center text-white text-center py-5">
@@ -411,7 +469,7 @@
     </div>
   </section>
 
-  <footer id="contacto" class="footer-personalizado text-dark py-5">
+  <!--<footer id="contacto" class="footer-personalizado text-dark py-5">
     <div class="container text-center">
       <p class="mb-2">
         <i class="fas fa-map-marker-alt me-2"></i>Constitución 127, Haedo, Buenos Aires
@@ -437,12 +495,60 @@
           target="_blank"><i class="fab fa-twitter"></i></a>
       </div>
     </div>
+
+  </footer>-->
+  <footer id="contacto" class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-start">
+
+      <!-- Logo y Título alineados horizontalmente -->
+      <div class="mb-4 d-flex justify-content-center align-items-center gap-2">
+        <img src="./assets/img/logoUnidata.png" alt="UniData Logo" style="width: 60px; height: auto;">
+        <h4 class="mb-0 titulof">UniData</h4>
+      </div>
+
+
+      <!-- Navegación -->
+      <nav class="mb-3">
+        <ul class="nav justify-content-center flex-wrap">
+          <li class="nav-item">
+            <a href="#inicio" class="nav-link text-white">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#ofertas" class="nav-link text-white">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#servicio" class="nav-link text-white">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacto" class="nav-link text-white">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Datos de contacto -->
+      <div class="text-center mb-3">
+        <p class="mb-1">Dirección: Constitución 127, Haedo</p>
+        <p class="mb-1">Teléfono: +54 9 11 5636-3993</p>
+        <p>✉️ Email: unidata11@msn.com</p>
+      </div>
+
+      <!-- Redes sociales -->
+      <div class="text-center">
+        <p class="mb-2">Síguenos en:</p>
+        <a href="https://www.facebook.com/unidata.soluciones.informaticas" class="text-white mx-2" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F%3Fhl%3Des-la" class="text-white mx-2" target="_blank"><i
+            class="fab fa-instagram fa-lg"></i></a>
+        <a href="https://wa.me/5491156363993" class="text-white mx-2" target="_blank"><i
+            class="fab fa-whatsapp fa-lg"></i></a>
+      </div>
+
+    </div>
   </footer>
 
   <a href="https://wa.me/5491156363993" target="_blank" class="btn-whatsapp" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
-  
+
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="code.js"></script>

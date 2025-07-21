@@ -137,6 +137,10 @@
   /* 3 cards por fila con 1rem de espacio aproximado */
 }
 
+.textp{
+  font-size: 0.90rem;
+}
+
 @media (max-width: 768px) {
   .oferta-card {
     width: 100% !important;
@@ -202,5 +206,44 @@
   }
 }
 
+/* Scrollbar general */
+::-webkit-scrollbar {
+  width: 10px; /* ancho de la barra vertical */
+}
+
+/* Fondo de la barra */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Color del scroll (el "thumb") */
+::-webkit-scrollbar-thumb {
+  background-color: #b2da39; /* verde neón */
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b2da39;
+}
+
+/* Firefox */
+html {
+  scrollbar-color: #b2da39 #f1f1f1; /* thumb color y track color */
+  scrollbar-width: thin;
+}
+
+.titulof{
+  color: #f1f1f1;
+  font-family: "Bruno Ace", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.spanprecio{
+  color: #ff0534;
+  font-weight: 700;
+}
 
 
